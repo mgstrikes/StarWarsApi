@@ -9,10 +9,7 @@ using System.Threading.Tasks;
 
 namespace StarWarsAPI
 {
-    /// <summary>
-    /// The class is responsibe for connecting to the http://swapi.co/api/ and returning starwars data.
-    /// The library exposes a set of Async functions to retrieve data asynchronously.
-    /// </summary>
+
     public class StarWarsAPIClient
     {
         readonly protected string BaseAddress = @"http://swapi.co/api/";
@@ -59,13 +56,6 @@ namespace StarWarsAPI
         }
 
 
-        /// <summary>
-        /// Helper method to return a list of T objects, given a series of URLs
-        /// The  method is async, but it gets all of the items in one go (vs each item is retrieved async)
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="urls"></param>
-        /// <returns></returns>
         public async Task<IEnumerable<T>> GetListAsync<T>(IEnumerable<string> urls)
         {
            
