@@ -37,14 +37,14 @@ namespace StarWarsConsoleTestApp
         {
             var api = new StarWarsAPIClient();
 
-            var people = api.GetPeopleAsync(name).Result;
-            Console.WriteLine(people.name);
+            var people = api.GetFilmAsync(name).Result;
+            Console.WriteLine(people.title);
            
 
-            foreach (var film in people.GetFilmAsync().Result)
-            {
-                Console.WriteLine(film.title);
-            }         
+            //foreach (var film in people.GetFilmAsync().Result)
+            //{
+            //    Console.WriteLine(film.title);
+            //}         
         }
     }
 }

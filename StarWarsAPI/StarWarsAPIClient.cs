@@ -32,13 +32,6 @@ namespace StarWarsAPI
             return client;
         }
 
-
-        /// <summary>
-        /// Helper method to make a request and get the response , and serialize it using JSON into the T object
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="url"></param>
-        /// <returns></returns>
         public async Task<T> GetAsync<T>(string url)
         {
 
@@ -80,7 +73,7 @@ namespace StarWarsAPI
 
         public async Task<People> GetPeopleAsync(string name)
         {
-            string url = string.Format("{0}/?search={1}", "movies", name);
+            string url = string.Format("{0}/?search={1}", "films", name);
             return await GetAsync<People>(url);
         }
      
