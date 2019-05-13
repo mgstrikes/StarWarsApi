@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extension\StarWarsEntityListExt.cs" />
     <Compile Include="Extension\StarWarsFilmExt.cs" />
     <Compile Include="Extension\StarWarsPeopleExt.cs" />
     <Compile Include="Model\Film.cs" />

@@ -80,7 +80,7 @@ namespace StarWarsAPI
 
         public async Task<People> GetPeopleAsync(string name)
         {
-            string url = string.Format("{0}/?search={1}", "people", name);
+            string url = string.Format("{0}/?search={1}", "movies", name);
             return await GetAsync<People>(url);
         }
      
